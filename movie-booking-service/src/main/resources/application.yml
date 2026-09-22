@@ -1,0 +1,16 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: movie-booking-service
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      acks: all
+
+logging:
+  pattern:
+    console: "%d{HH:mm:ss.SSS} %-5level [%thread] %logger{36} - %msg%n"

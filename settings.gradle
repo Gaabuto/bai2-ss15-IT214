@@ -1,0 +1,5 @@
+rootProject.name = 'movie-ticket-saga'
+
+include 'movie-booking-service'
+include 'seat-allocation-service'
+include 'payment-service'
